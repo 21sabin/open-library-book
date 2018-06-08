@@ -20,6 +20,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToasterModule, ToasterService} from 'angular2-toaster';
 import { BookService } from './services/bookService';
 import { QuoteService } from './services/quoteService';
+import { HeaderComponent } from './components/common/header.component';
+import { SearchBookComponent } from './components/searchBook/searchBook.component';
+import { SearchBookService } from './services/searchBookService';
+import { LibraryService } from './services/libraryService';
  
 
 @NgModule({
@@ -27,7 +31,9 @@ import { QuoteService } from './services/quoteService';
     AppComponent,
     AuthenticationComponent,
     DashboardComponent,
-    SearchComponent
+    SearchComponent,
+    HeaderComponent,
+    SearchBookComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,7 @@ import { QuoteService } from './services/quoteService';
     ToasterModule.forRoot(),
     BrowserAnimationsModule
   ],
-  providers: [AuthenticationService,HttpClient, BookService, QuoteService],
+  providers: [AuthenticationService,HttpClient,SearchBookService,LibraryService, BookService, QuoteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
