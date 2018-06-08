@@ -7,8 +7,8 @@ import { SearchBookComponent } from './components/searchBook/searchBook.componen
 const app_Routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: AuthenticationComponent },
-  { path:'dashboard',component:DashboardComponent},
-  { path:'searchBook',component:SearchBookComponent},
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'searchBook', component: SearchBookComponent },
   { path: '**', redirectTo: '' }
 ];
 
