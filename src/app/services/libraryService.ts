@@ -57,7 +57,15 @@ export class LibraryService {
 
    fetchLibrary(){
         return new Promise((resolve,reject)=>{
-            resolve(this.libraryList)
+            let library=[]
+            var x = Math.floor((Math.random() * 4)+2 );
+            console.log(x,"random number")
+            for(var i=0;i<x;i++){
+                library.push(this.libraryList[i]);
+            }
+            console.log(library,"librayr random")
+            resolve(library);
+            
         })
    }
  
