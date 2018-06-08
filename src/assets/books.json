@@ -1,0 +1,142 @@
+[
+  {
+    "bookName": "The Kite Runner",
+    "author": [
+      "Khaled Hosseini"
+    ],
+    "category": "sci-fi",
+    "rating": "5",
+    "status": true,
+    "library": [
+      "iHub",
+      "Kaiser Library",
+      "Nepal National Library"
+    ]
+  },
+  {
+    "bookName": "The Host",
+    "author": [
+      "Stephanie Meyer"
+    ],
+    "category": "sci-fi",
+    "rating": "4.5",
+    "status": true,
+    "library": [
+      "Kathmandu Valley Public Library",
+      "AWON Library",
+      "Nepal National Library"
+    ]
+  },
+  {
+    "bookName": "A Tale of Two Cities",
+    "author": [
+      "Charles Dickens"
+    ],
+    "category": "sci-fi",
+    "rating": "5",
+    "status": true,
+    "library": [
+      "iHub",
+      "Kaiser Library",
+      "AWON Library"
+    ]
+  },
+  {
+    "bookName": "Don Quixote",
+    "author": [
+      "Miguel de Cervantes"
+    ],
+    "category": "fiction",
+    "rating": "4",
+    "status": true,
+    "library": [
+      "iHub",
+      "Kaiser Library",
+      "Madan Puraskar Pustakalaya"
+    ]
+  },
+  {
+    "bookName": "The Lord of the Rings",
+    "author": [
+      "J.R.R.Tolkien"
+    ],
+    "category": "fiction",
+    "rating": "4",
+    "status": true,
+    "library": [
+      "iHub",
+      "Kaiser Library",
+      "Nepal National Library"
+    ]
+  },
+  {
+    "bookName": "The Little Prince",
+    "author": [
+      "Antoine de Saint-Exupéry"
+    ],
+    "category": "fiction",
+    "rating": "4.5",
+    "status": true,
+    "library": [
+      "iHub",
+      "Kaiser Library",
+      "Nepal National Library"
+    ]
+  },
+  {
+    "bookName": "The Hobbit",
+    "author": [
+      "J.R.R.Tolkien"
+    ],
+    "category": "fiction",
+    "rating": "5",
+    "status": true,
+    "library": [
+      "iHub",
+      "Kaiser Library",
+      "Nepal National Library"
+    ]
+  },
+  {
+    "bookName": "Alice's Adventures in Wonderland",
+    "author": [
+      "Lewis Carroll"
+    ],
+    "category": "fiction",
+    "rating": "4.5",
+    "status": false,
+    "library": [
+      "iHub",
+      "Kaiser Library",
+      "Nepal National Library"
+    ]
+  },
+  {
+    "bookName": "She: A History of Adventure",
+    "author": [
+      "H. Rider Haggard"
+    ],
+    "category": "fiction",
+    "rating": "4",
+    "status": false,
+    "library": [
+      "iHub",
+      "Kaiser Library",
+      "Nepal National Library"
+    ]
+  },
+  {
+    "bookName": "The Da Vinci Code",
+    "author": [
+      "Dan Brown"
+    ],
+    "category": "fiction",
+    "rating": "4.5",
+    "status": true,
+    "library": [
+      "Madan Puraskar Pustakalaya",
+      "Kaiser Library",
+      "American Library"
+    ]
+  }
+]
