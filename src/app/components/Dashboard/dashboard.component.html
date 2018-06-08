@@ -1,37 +1,163 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Open Books Nepal</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Reading</a>
+          <a class="dropdown-item" href="#">Wishlist</a>
+          <a class="dropdown-item" href="#">Reviews</a>
+        </div>
+      </li> -->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" style="margin-right: 30.5rem!important; padding: 0.375rem 7.75rem; border-radius:1.25rem; align-content: center"  type="search" placeholder="Search" aria-label="Search">
+      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+    </form>
+
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="fa fa-user"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">User Settings</a>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+    </ul>
+    
+  </div>
+</nav>
 
 <div class="container">
   <div class="jumbotron" style="margin-top: 15px;">
     <blockquote class="blockquote">
-      <p class="mb-0 text-center">Our greatest glory is not in never falling, but in rising every time we fall.</p>
-      <footer class="blockquote-footer text-center"> Confucius</footer>
+      <p class="mb-0 text-center">{{ quoteList.quotes }}</p>
+      <footer class="blockquote-footer text-center"> {{ quoteList.by }}</footer>
     </blockquote>
   </div>
 
-  <div class="card col-md-8">
-    <div class="card-header">
-      iHub
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          iHub
+        </div>
+        <div class="card-body col-md-12">
+          <div class="row">
+            <img class="card-img-left col-md-4" src="http://www.jyotishree.com/images/portfolio/ihub.png" alt="Card image cap" height="50%"
+              width="50%">
+            <div class="col-md-8">
+              <h5 class="card-title">iHub Nepal</h5>
+              <ul>
+                <li>Location:
+                  <strong> Basanta Marg, Kathmandu 44600</strong>
+                </li>
+                <li>Distance:
+                  <strong> 1.2 kms</strong> Navigate: </li>
+                <li>Opening hours:
+                  <strong> 10 AM - 7 PM</strong>
+                </li>
+                <li>
+                  Social Links:
+                  <a href="../../../assets/icons/facebook.png">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="card">
+        <div class="card-header">
+          Kaiser Library
+        </div>
+        <div class="card-body col-md-12">
+          <div class="row">
+            <img class="card-img-left col-md-4" src="https://media-cdn.tripadvisor.com/media/photo-s/05/94/cd/f2/kaiser-library.jpg"
+              alt="Card image cap" height="50%" width="50%">
+            <div class="col-md-8">
+              <h5 class="card-title">Kaiser Library</h5>
+              <ul>
+                <li>Location:
+                  <strong> Kanti Path, Kathmandu 44600</strong>
+                </li>
+                <li>Distance:
+                  <strong> 1.2 kms</strong> Navigate: </li>
+                <li>Opening hours:
+                  <strong> 10 AM - 7 PM</strong>
+                </li>
+                <li>
+                  Social Links:
+                  <a href="../../../assets/icons/facebook.png"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="card">
+        <div class="card-header">
+          Nepal National Library
+        </div>
+        <div class="card-body col-md-12">
+          <div class="row">
+            <img class="card-img-left col-md-4" src="http://www.tourismkathmandu.com/images/classification/nepal-national-library-p1.jpg"
+              alt="Card image cap" height="50%" width="50%">
+            <div class="col-md-8">
+              <h5 class="card-title">Nepal National Library</h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card-body col-md-12">
-      <div class="row">
-        <img class="card-img-left col-md-4" src="http://www.jyotishree.com/images/portfolio/ihub.png" alt="Card image cap">
-        <div class="col-md-8">
-          <h5 class="card-title">iHub Nepal</h5>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          Trending ⚡
+        </div>
+        <div class="card-body col-md-12">
+          <div class="row">
+            <ul>
+              <li *ngFor="let book of bookList"> 
+                <a href="#">{{ book.bookName }}</a>
+              </li>
+              <!-- <li>
+                <a href="#">The Tale of Two Cities</a>
+              </li>
+              <li>
+                <a href="#">The Kite Runner</a>
+              </li> -->
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="card col-md-8">
-    <div class="card-header">
-      Kaishar Library
-    </div>
-    <div class="card-body col-md-12">
-      <div class="row">
-        <img class="card-img-left col-md-4" src="http://www.jyotishree.com/images/portfolio/ihub.png" alt="Card image cap">
-        <div class="col-md-8">
-          <h5 class="card-title">iHub Nepal</h5>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>

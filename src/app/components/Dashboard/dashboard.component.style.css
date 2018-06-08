@@ -1,0 +1,12 @@
+.box-size {
+  height: 300px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.icon {
+  background:url('../../../assets/icons/navigation.png');
+
+}

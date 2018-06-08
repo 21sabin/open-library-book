@@ -18,6 +18,8 @@ import { SearchComponent } from './components/search/search.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {ToasterModule, ToasterService} from 'angular2-toaster';
+import { BookService } from './services/bookService';
+import { QuoteService } from './services/quoteService';
 import { HeaderComponent } from './components/common/header.component';
 import { SearchBookComponent } from './components/searchBook/searchBook.component';
 import { SearchBookService } from './services/searchBookService';
@@ -42,7 +44,7 @@ import { LibraryService } from './services/libraryService';
     ToasterModule.forRoot(),
     BrowserAnimationsModule
   ],
-  providers: [AuthenticationService,HttpClient,SearchBookService,LibraryService],
+  providers: [AuthenticationService,HttpClient,SearchBookService,LibraryService, BookService, QuoteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
