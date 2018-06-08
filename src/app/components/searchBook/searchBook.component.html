@@ -1,0 +1,66 @@
+<app-header></app-header>
+<hr>
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" [(ngModel)]="bookName" id="inputPassword" placeholder="Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <button type="submit" (click)="searchBook()" class="btn btn-primary mb-2">search book</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+
+    <div class="card" style="width:700px;margin-left:200px" *ngIf="displayFlag">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="{{imageUrl}}" alt="book" />
+                </div>
+                <div class="col-sm-6">
+                    <ul style="list-style:none;">
+                        <li>
+                            <b>Title:</b>&nbsp;{{title}}</li>
+                        <br>
+                        <li>
+                            <b>Author:</b>&nbsp;{{author}}</li>
+                        <li>
+                            <b>Description:</b>&nbsp;{{description}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- <h1>Library List</h1>
+    <div class="card" style="width:700px;margin-left:200px" *ngIf="displayFlag">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="{{imageUrl}}" alt="book" />
+                    </div>
+                    <div class="col-sm-6">
+                        <ul style="list-style:none;">
+                            <li>
+                                
+                            <br>
+                            <li>
+                                <b>Author:</b>&nbsp;{{author}}</li>
+                            <li>
+                                <b>Description:</b>&nbsp;{{description}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+</div>
