@@ -5,6 +5,7 @@ import { HttpClient } from './httpService';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
+import { Router } from '@angular/router';
 
 declare var app: any;
 
@@ -12,7 +13,8 @@ const API_BASE_URL = config.apiBaseUrl.development
 @Injectable()
 export class AuthenticationService {
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private router: Router
   ) {
       console.log(API_BASE_URL,"url")
    }
@@ -34,5 +36,6 @@ export class AuthenticationService {
   logout() {
     // remove user from local storage to log user out
     localStorage.removeItem('loggedInUser');
+    this.router.navigateByUrl('/login');
   }
 }
