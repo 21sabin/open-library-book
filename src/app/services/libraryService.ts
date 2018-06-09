@@ -48,15 +48,7 @@ export class LibraryService {
             imageUrl:"https://media-cdn.tripadvisor.com/media/photo-s/05/94/cd/f2/kaiser-library.jpg",
             availableStatus:"Available",
             display:false
-        },   {
-            name:"Buddhi Vikas Mandal",
-            distance:"3.5 km Navigate",
-            location:"Lagankhel, Kathmandu",
-            opening:"10Am-5Pm",
-            imageUrl:"https://www.google.com/search?q=library+imags&client=firefox-b-ab&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiGh-zD1MXbAhVNOisKHfUrAIMQ_AUICigB&biw=1366&bih=654#imgrc=e55qvQb_RXxToM:",
-            availableStatus:"Available",
-            display:false
-        },   {
+        },  {
             name:"Central Library",
             distance:"2.8 km Navigate",
             location:"Kirtipur ,Kathmandu",
