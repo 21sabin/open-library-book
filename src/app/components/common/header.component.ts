@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { AuthenticationService } from '../../services';
 
 
 
@@ -10,12 +11,16 @@ import { NgForm } from '@angular/forms';
      
 })
 export class HeaderComponent {
-  constructor(){}
+  constructor(
+    private authService: AuthenticationService
+  ){}
 
-  
-    
   ngOnInit(){
    
+  }
+
+  logout() {
+    this.authService.logout();
   }
 
 
