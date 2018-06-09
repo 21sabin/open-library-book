@@ -1,5 +1,9 @@
 <app-header></app-header>
 
+
+
+
+
 <div class="container">
   <div class="jumbotron" style="margin-top: 15px;">
     <blockquote class="blockquote">
@@ -8,7 +12,9 @@
     </blockquote>
   </div>
 
-  <div class="row">
+  <app-searchBook [getBookName]="bName" (diplaEventEmitter)="getDisplayEvent($event)"></app-searchBook>
+
+  <div class="row" *ngIf="displayFlag">
     <div class="col-md-8">
       <div class="card">
         <div class="card-header">

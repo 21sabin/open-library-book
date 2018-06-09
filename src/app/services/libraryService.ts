@@ -27,7 +27,7 @@ export class LibraryService {
             distance:"1.4 km Navigate",
             location:"Tangal, GPO Box: 13588, Ktm",
             opening:"9Am-6Pm",
-            imageUrl:"http://www.jyotishree.com/images/portfolio/ihub.png"
+            imageUrl:"https://media-cdn.tripadvisor.com/media/photo-s/05/94/cd/f2/kaiser-library.jpg"
         },   {
             name:"Biplavi Pustakalaya",
             distance:"1.2 km Navigate",
@@ -39,13 +39,13 @@ export class LibraryService {
             distance:"1.2 km Navigate",
             location:"Lainchaur, GPO Box: 640, Ktm",
             opening:"10Am-7Pm",
-            imageUrl:"http://www.jyotishree.com/images/portfolio/ihub.png"
+            imageUrl:"https://media-cdn.tripadvisor.com/media/photo-s/05/94/cd/f2/kaiser-library.jpg"
         },   {
             name:"Buddhi Vikas Mandal",
             distance:"3.5 km Navigate",
             location:"Lagankhel, Kathmandu",
             opening:"10Am-5Pm",
-            imageUrl:"http://www.jyotishree.com/images/portfolio/ihub.png"
+            imageUrl:"https://www.google.com/search?q=library+imags&client=firefox-b-ab&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiGh-zD1MXbAhVNOisKHfUrAIMQ_AUICigB&biw=1366&bih=654#imgrc=e55qvQb_RXxToM:"
         },   {
             name:"Central Library",
             distance:"2.8 km Navigate",

@@ -25,6 +25,7 @@ import { SearchBookComponent } from './components/searchBook/searchBook.componen
 import { SearchBookService } from './services/searchBookService';
 import { LibraryService } from './services/libraryService';
 import { ProfileComponent } from './components/profile/profile.component';
+import { ReviewService } from './services/reviewService';
  
 
 @NgModule({
@@ -46,7 +47,7 @@ import { ProfileComponent } from './components/profile/profile.component';
     ToasterModule.forRoot(),
     BrowserAnimationsModule
   ],
-  providers: [AuthenticationService,HttpClient,SearchBookService,LibraryService, BookService, QuoteService],
+  providers: [AuthenticationService,HttpClient,ReviewService,SearchBookService,LibraryService, BookService, QuoteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
