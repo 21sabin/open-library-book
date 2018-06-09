@@ -15,4 +15,9 @@ export class BookService {
     return this.http.get('assets/books.json')
       .map((res: Response) => res.json())
   }
+
+  getBooksByUser(): Observable<any> {
+    return this.http.get('assets/books-detail.json')
+      .map((res: Response) => res.json())
+  }
 }
