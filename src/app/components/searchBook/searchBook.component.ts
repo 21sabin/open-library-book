@@ -32,6 +32,9 @@ export class SearchBookComponent {
     review:string;
 
     readMsg="Read";
+    readingFlag:boolean=false;
+    readMsgFlag:boolean=false;
+   
   
   
     
@@ -47,6 +50,16 @@ export class SearchBookComponent {
   }
   onClickRed(){
     this.readMsg="Done";
+    this.readMsgFlag=true;
+    setTimeout(()=>{
+      this.readMsgFlag=false;
+    },3000)
+  }
+  reading(){
+    this.readingFlag=true;
+    setTimeout(()=>{
+      this.readingFlag=false;
+    },3000)
   }
   getReview(){
     console.log(this.review,"review")
@@ -63,7 +76,7 @@ export class SearchBookComponent {
             console.log(data.items[0].volumeInfo.description);
             this.imageUrl=data.items[0].volumeInfo.imageLinks.thumbnail;
             this.title=data.items[0].volumeInfo.title;
-           this.description= data.items[0].volumeInfo.description;
+           this.description= data.items[0].volumeInfo.description.substring(0,100);
             this.author=data.items[0].volumeInfo.authors[0];
             console.log(this.imageUrl,this.title,this.author,this.description,"bookinfo")
             this.displayFlag=true;
