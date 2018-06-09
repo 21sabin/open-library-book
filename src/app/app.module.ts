@@ -24,6 +24,7 @@ import { HeaderComponent } from './components/common/header.component';
 import { SearchBookComponent } from './components/searchBook/searchBook.component';
 import { SearchBookService } from './services/searchBookService';
 import { LibraryService } from './services/libraryService';
+import { ReviewService } from './services/reviewService';
  
 
 @NgModule({
@@ -44,7 +45,7 @@ import { LibraryService } from './services/libraryService';
     ToasterModule.forRoot(),
     BrowserAnimationsModule
   ],
-  providers: [AuthenticationService,HttpClient,SearchBookService,LibraryService, BookService, QuoteService],
+  providers: [AuthenticationService,HttpClient,ReviewService,SearchBookService,LibraryService, BookService, QuoteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

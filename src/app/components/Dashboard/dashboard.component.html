@@ -8,9 +8,9 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home
+        <!-- <a class="nav-link" href="#">Home
           <span class="sr-only">(current)</span>
-        </a>
+        </a> -->
       </li>
 
       <!-- <li class="nav-item dropdown">
@@ -24,19 +24,23 @@
           <a class="dropdown-item" href="#">Reviews</a>
         </div>
       </li> -->
+      
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" style="margin-right: 30.5rem!important; padding: 0.375rem 7.75rem; border-radius:1.25rem; align-content: center"  type="search" placeholder="Search" aria-label="Search">
-      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-    </form>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" style="margin-right: 30.5rem!important;
+       padding: 0.375rem 7.75rem; border-radius:1.25rem; align-content: center" 
+        type="search" placeholder="Search" [(ngModel)]="bName" aria-label="Search">
+        <button type="button" style="margin-left:20rem !important;" class="btn btn-primary btn-sm"><span><i class="fas fa-search"></i></span></button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
 
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto" style="float:right;">
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            <a class="nav-link dropdown-toggle" href="#" style="padding-left:65rem;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               <i class="fa fa-user"></i>
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu nagbar-right" aria-labelledby="navbarDropdown" style="margin-left:800px;">
               <a class="dropdown-item" href="#">Profile</a>
               <a class="dropdown-item" href="#">User Settings</a>
               <a class="dropdown-item" href="#">Logout</a>
@@ -47,6 +51,10 @@
   </div>
 </nav>
 
+
+
+
+
 <div class="container">
   <div class="jumbotron" style="margin-top: 15px;">
     <blockquote class="blockquote">
@@ -55,7 +63,9 @@
     </blockquote>
   </div>
 
-  <div class="row">
+  <app-searchBook [getBookName]="bName" (diplaEventEmitter)="getDisplayEvent($event)"></app-searchBook>
+
+  <div class="row" *ngIf="displayFlag">
     <div class="col-md-8">
       <div class="card">
         <div class="card-header">

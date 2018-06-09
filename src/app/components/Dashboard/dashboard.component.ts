@@ -17,6 +17,9 @@ export class DashboardComponent {
 
   bookList = [];
   quoteList: any;
+  bName:string="";
+  displayFlag:boolean=true;
+  showBookLibrary:boolean=false;
   constructor(
     private bookService: BookService,
     private quoteService: QuoteService
@@ -51,6 +54,12 @@ export class DashboardComponent {
           console.log('error', error);
         }
       );
+  }
+
+  getDisplayEvent(event:any){
+    console.log(event,"display event");
+    this.showBookLibrary=event;
+    this.displayFlag=false;
   }
 
 
