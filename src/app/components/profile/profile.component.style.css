@@ -88,27 +88,3 @@ body {
 .user-profile span:hover {
   color: #daebea;
 }
-
-.read {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-.read .read-book {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.read:hover .read-book {
-  visibility: visible;
-  cursor: pointer;
-}
