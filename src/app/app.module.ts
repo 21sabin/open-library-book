@@ -24,6 +24,7 @@ import { HeaderComponent } from './components/common/header.component';
 import { SearchBookComponent } from './components/searchBook/searchBook.component';
 import { SearchBookService } from './services/searchBookService';
 import { LibraryService } from './services/libraryService';
+import { ProfileComponent } from './components/profile/profile.component';
  
 
 @NgModule({
@@ -33,7 +34,8 @@ import { LibraryService } from './services/libraryService';
     DashboardComponent,
     SearchComponent,
     HeaderComponent,
-    SearchBookComponent
+    SearchBookComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

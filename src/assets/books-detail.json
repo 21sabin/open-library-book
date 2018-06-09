@@ -1,0 +1,126 @@
+[
+  {
+    "readBooks": [
+      {
+        "details": [
+          {
+            "title": "The Maze Runner",
+            "author": "James Dashner",
+            "publishedDate": "Oct. 6, 2009",
+            "category": "Sci-fi",
+            "rating": 4,
+            "thumbnail": "https://upload.wikimedia.org/wikipedia/en/d/db/The_Maze_Runner_cover.png"
+          },
+          {
+            "title": "The Kite Runner",
+            "author": "Khaled Hosseini",
+            "publishedDate": "May 29, 2003",
+            "category": "Drama",
+            "rating": 5,
+            "thubmnail": "https://upload.wikimedia.org/wikipedia/en/6/62/Kite_runner.jpg"
+          },
+          {
+            "title": "A Tale of Two Cities",
+            "author": "Charles Dickens",
+            "publishedDate": "1859",
+            "category": "Drama",
+            "rating": 4,
+            "thubmnail": "http://t2.gstatic.com/images?q=tbn:ANd9GcRN4CENYYCwcCWCImDLHdIq43nOKK-snGTjcxFkCEpEuNMhGZ4m"
+          },
+          {
+            "title": "A Tale of Two Cities",
+            "author": "Charles Dickens",
+            "publishedDate": "1859",
+            "category": "Drama",
+            "rating": 4,
+            "thubmnail": "http://t2.gstatic.com/images?q=tbn:ANd9GcRN4CENYYCwcCWCImDLHdIq43nOKK-snGTjcxFkCEpEuNMhGZ4m"
+          },
+          {
+            "title": "The Fault in Our Stars",
+            "author": "John Green",
+            "publishedDate": "Jan. 12, 2012",
+            "category": "Drama",
+            "rating": 4,
+            "thubmnail": "https://upload.wikimedia.org/wikipedia/en/a/a9/The_Fault_in_Our_Stars.jpg"
+          },
+          {
+            "title": "Angels & Demons",
+            "author": "Dan Brown",
+            "publishedDate": "May 2000",
+            "category": "Thriller",
+            "rating": 4,
+            "thubmnail": "http://t2.gstatic.com/images?q=tbn:ANd9GcR16OvQgRWSnbp9qOj-LoCEtcJFqQ6P7bzxg_B5iJP0U6H_sGVY"
+          }
+        ]
+      }
+    ],
+    "wishList": [
+      {
+        "details": [
+          {
+            "title": "The Scorch Trials",
+            "author": "James Dashner",
+            "publishedDate": "Sept. 18, 2010",
+            "category": "Sci-fi",
+            "rating": 4,
+            "thumbnail": "https://upload.wikimedia.org/wikipedia/en/b/b6/The_Scorch_Trials_cover.jpg"
+          },
+          {
+            "title": "The Alchemist",
+            "author": "Paulo Coelho",
+            "publishedDate": "1988",
+            "category": "Drama",
+            "rating": 5,
+            "thubmnail": "https://upload.wikimedia.org/wikipedia/en/6/62/Kite_runner.jpg"
+          },
+          {
+            "title": "A Tale of Two Cities",
+            "author": "Charles Dickens",
+            "publishedDate": "1859",
+            "category": "Drama",
+            "rating": 4,
+            "thubmnail": "http://t2.gstatic.com/images?q=tbn:ANd9GcRN4CENYYCwcCWCImDLHdIq43nOKK-snGTjcxFkCEpEuNMhGZ4m"
+          },
+          {
+            "title": "The Da Vinci Code",
+            "author": "Dan Brown",
+            "publishedDate": "Mar. 18, 2003",
+            "category": "Drama",
+            "rating": 4,
+            "thubmnail": "http://t2.gstatic.com/images?q=tbn:ANd9GcSHRawsHI05fh5JsbyF53K77FgBKWNsUrVs4Gkdd-XPCMW6V46g"
+          },
+          {
+            "title": "Turtles All the Way Down",
+            "author": "John Green",
+            "publishedDate": "Oct. 10, 2017",
+            "category": "Adult Fiction",
+            "rating": 4,
+            "thubmnail": "http://t2.gstatic.com/images?q=tbn:ANd9GcTIthyTMZHamK-_gJcbhHSCRsmHzG4_fvvOpKu6-hHubuZfsqb1"
+          },
+          {
+            "title": "Origin",
+            "author": "Dan Brown",
+            "publishedDate": "October 2017",
+            "category": "Crime Fiction",
+            "rating": 4,
+            "thubmnail": "http://t2.gstatic.com/images?q=tbn:ANd9GcRBHoBmSnf0R2NWCitvth8qk7EGWYOHgjU5YCM0wi7hqP0Q6jLi"
+          }
+        ]
+      }
+    ],
+    "reading": [
+      {
+        "details": [
+          {
+            "title": "The Host",
+            "author": "Stephenie Meyer",
+            "publishedDate": "May 6, 2008",
+            "category": "Sci-fi",
+            "rating": 4,
+            "thumbnail": "http://t0.gstatic.com/images?q=tbn:ANd9GcT1878P336uyZszBnjMaO1Sh3kiLNXluYQ256niv3ZHI7T4CdXT"
+          }
+        ]
+      }
+    ]
+  }
+]

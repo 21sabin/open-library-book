@@ -1,0 +1,40 @@
+<app-header></app-header>
+
+<div class="container">
+    <h1 class="title-pen"> User Profile </h1>
+    <div class="user-profile">
+      <img class="avatar" src="../../../assets/icons/boy.png" alt="Ash" />
+        <div class="username">Admin</div>
+      <div class="bio">
+        Avid Reader
+      </div>
+        <div class="description">
+          I use to design websites and applications
+          for the web.
+      </div>
+      <ul class="data">
+        <li>
+          Read Books <img src="../../../assets//icons/notebook.png" class="read">
+          <span class="read-book" *ngFor="let book of readBooks">{{ book.title }}</span>
+        </li>
+     </ul>
+
+     <ul class="data">
+      <li>
+        Currently Reading <img src="../../../assets/icons/open-book.png">
+      </li>
+     </ul>
+
+     <ul class="data">
+      <li>
+        Reviews <img src="../../../assets/icons/review.png">
+      </li>
+     </ul>
+
+     <ul class="data">
+      <li>
+        Wish list <img src="../../../assets/icons/wishlist.png">
+      </li>
+     </ul>
+    </div>
+</div>
