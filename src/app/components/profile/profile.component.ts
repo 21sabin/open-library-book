@@ -24,7 +24,8 @@ export class ProfileComponent implements OnInit {
       .subscribe(
         data => {
           console.log(data, 'data');
-          this.readBooks = data[0].readBooks;
+          this.readBooks = data[0].readBooks[0].details;
+          console.log(this.readBooks);
           this.wishList = data[0].wishList;
           this.reading = data[0].reading;
         },

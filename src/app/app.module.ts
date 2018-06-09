@@ -24,8 +24,13 @@ import { HeaderComponent } from './components/common/header.component';
 import { SearchBookComponent } from './components/searchBook/searchBook.component';
 import { SearchBookService } from './services/searchBookService';
 import { LibraryService } from './services/libraryService';
+<<<<<<< HEAD
 import { ReviewService } from './services/reviewService';
 import { ProfileComponent } from './components/profile/profile.component';
+=======
+import { ProfileComponent } from './components/profile/profile.component';
+import { ReviewService } from './services/reviewService';
+>>>>>>> 6b8cfa99f9abe7daedee4f59afaccfb18b9ac3ef
  
 
 @NgModule({
